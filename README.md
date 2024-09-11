@@ -1,4 +1,24 @@
-# React + TypeScript + Vite
+# How to run the app
+Node version: >=18
+
+1. Install Node Modules
+```bash
+pnpm i
+```
+2. Add Environment variables
+```bash
+// .env.local
+VITE_APP_HISTORICAL_DATA_API=https://disease.sh/v3/covid-19/historical/all?lastdays=all
+VITE_APP_COUNTRYWISE_DATA_API=https://disease.sh/v3/covid-19/countries
+```
+
+3. Run the application
+```bash
+pnpm dev
+```
+
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
