@@ -21,8 +21,8 @@ function ContactCard(props: Iprops) {
     <Card className="w-full sm:w-[370px]">
       <CardHeader>
         <div className="flex gap-x-3 items-center">
-          <div className="flex flex-1 mr-20">
-            <div className="mr-2">
+          <div className="flex flex-1 mr-auto">
+            <div className="mr-2 w-[3rem]">
               <img
                 className="rounded-[50%]"
                 src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
