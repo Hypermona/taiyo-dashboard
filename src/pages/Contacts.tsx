@@ -36,7 +36,7 @@ function Contacts() {
       </div>
       <div className="mt-20 flex gap-5 flex-wrap">
         {contacts.length > 0 ? (
-          contacts.map((contact) => <ContactCard data={contact} onEdit={onEdit} />)
+          contacts.map((contact) => <ContactCard data={contact} onEdit={onEdit} key={contact.id} />)
         ) : (
           <div className="flex justify-center items-start w-full">
             <CrossCircledIcon className="text-muted-foreground" width={24} height={24} />

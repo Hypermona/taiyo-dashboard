@@ -22,6 +22,7 @@ function CustomLineChart({ chartData, chartConfig }: Props) {
         <CartesianGrid vertical={false} />
         {Object.keys(chartConfig).map((line) => (
           <Line
+            key={line}
             dataKey={line}
             stroke={`var(--color-${line})`}
             type={"natural"}

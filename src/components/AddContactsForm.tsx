@@ -46,7 +46,7 @@ export function AddContactForms({ data, handleClose, open }: IAddContactForm) {
         <form onSubmit={onSubmit}>
           <div className="grid gap-4 py-4">
             {formData.map((form) => (
-              <div className="grid grid-cols-4 items-center gap-4">
+              <div className="grid grid-cols-4 items-center gap-4" key={form.name}>
                 <Label htmlFor={form.name} className="text-right">
                   {form.label}
                 </Label>

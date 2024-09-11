@@ -16,7 +16,7 @@ function FormField({ name, type, value, options }: IFormField) {
       return (
         <RadioGroup id={name} name={name} defaultValue={value} className="flex">
           {options?.map((option) => (
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2" key={option.id}>
               <RadioGroupItem value={option.value} id={option.id} />
               <Label htmlFor={option.id}>{option.label}</Label>
             </div>

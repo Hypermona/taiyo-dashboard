@@ -66,6 +66,7 @@ const Action = ({ chartConfig, onChange, selected }: IChartAction) => {
       <DropdownMenuContent className="w-56" side="left">
         {chartConfig.map((chart) => (
           <DropdownMenuCheckboxItem
+            key={chart.label}
             checked={selected == chart.value}
             onCheckedChange={() => onChange(chart.value)}
             disabled={selected == chart.value}

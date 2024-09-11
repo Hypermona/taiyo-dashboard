@@ -27,7 +27,7 @@ function PanelContent({ closeDrawer = () => {} }: { closeDrawer?: () => void }) 
     <nav>
       <ul className="grid gap-4 text-lg text-muted-foreground">
         {panelList.map((panel) => (
-          <li onClick={closeDrawer}>
+          <li onClick={closeDrawer} key={panel.link}>
             <NavLink
               to={panel.link}
               className={({ isActive, isPending }) =>
